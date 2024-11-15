@@ -19,7 +19,7 @@ schema = StructType([
     StructField("clm_avlb_in_trgt_bt_not_in_src", ArrayType(StringType()), True)
 ])
 
-def validate_single_table_pair(source_table_name, target_table_name, schema):
+def validate_single_table_pair(source_table_name, target_table_name, schema, spark):
     """
     Validates a single pair of source and target tables and returns a DataFrame with the result.
     """
